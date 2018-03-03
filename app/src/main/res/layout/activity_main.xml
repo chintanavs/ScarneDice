@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chintan.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="208dp"
+            android:layout_marginStart="11dp"
+            android:onClick="roll"
+            android:text="roll" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/roll"
+            android:layout_centerHorizontal="true"
+            android:onClick="reset"
+            android:text="reset" />
+
+        <Button
+            android:id="@+id/hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/reset"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:onClick="hold"
+            android:text="hold" />
+
+        <ImageView
+            android:id="@+id/diceView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp" />
+
+        <TextView
+            android:id="@+id/PlayerRoundScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reset"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:text="PlayerRoundScore:0"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ComputerRoundScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PlayerRoundScore"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="21dp"
+            android:text="ComputerRoundScore:0"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ComputerTurnScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ComputerRoundScore"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="21dp"
+            android:text="ComputerTurnScore:0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/PlayerTurnScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ComputerTurnScore"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="21dp"
+            android:text="PlayerTurnScore:0"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</android.widget.RelativeLayout>
+
